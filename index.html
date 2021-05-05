@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snarky Mugs</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>SNARKY MUGS</h1>
+      <nav id="mainNav">
+        <ul>
+          <li class="navItem"><a href="#">home</a></li>
+          <li class="navItem"><a href="#">about</a></li>
+          <li class="navItem"><a href="#">products</a></li>
+          <li class="navItem"><a href="#">cart</a></li>
+        </ul>
+      </nav>
+      <nav id="hamburgerNav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        <div id="hamburgerNavItems">
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">products</a>
+          <a href="#">cart</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="bannerSpacer">
+      </div>
+      <section id="banner">
+        <img
+          src="./images/BannerBackground.jpg"
+          alt="hand crafted mugs"
+          id="bannerBackground"
+        />
+        <div id="bannerTextContainer">
+          <h2>home of the world's greatest mugs.</h2>
+          <div id="hiddenTextParent">
+            <h3>10 out of 10 scientists agree they are, in fact, the greatest.</h2>
+          <h4 id="hiddenText">jk, we have nothing to back this up.</h4>
+          </div>
+        </div>
+      </section>
+      <section id="productsSection">
+        <div class="productContainer">
+          <img 
+            src="./images/snark.jpg"
+            alt="snarky mug"
+            class="productImage"
+          />
+          <a href="#"></a><button class="addToCartButton">Add<br>To<br>Cart</button></a>
+        </div>
+        <div class="productContainer">
+          <img
+            src="./images/AddText.jpg"
+            alt="snarky mug"
+            class="productImage"
+          />
+          <a href="#"></a><button class="addToCartButton">Add<br>To<br>Cart</button></a>
+        </div>
+        <div class="productContainer">
+          <img
+            src="./images/NotSnarkyPolite.jpg"
+            alt="snarky mug"
+            class="productImage"
+          />
+          <a href="#"></a><button class="addToCartButton">Add<br>To<br>Cart</button></a>
+        </div>
+        <div class="productContainer">
+          <a href="#"><button id="viewAllProductsButton">View<br>All<br>Products</button></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div id="socialMediaContainer">
+            <a href="#"><img src="./images/facebook-round-color.png" alt="Facebook" class="socialMediaIcon"></a>
+            <a href="#"><img src="./images/instagram-round-color.png" alt="Instagram" class="socialMediaIcon"></a>
+            <a href="#"><img src="./images/twitter-round-color.png" alt="Twitter" class="socialMediaIcon"></a>
+        </div>
+        <div id="copyright">
+            <p>&#169 2021 - Snarky Enterprises</p>
+        </div>
+    </footer>
+  </body>
+</html>

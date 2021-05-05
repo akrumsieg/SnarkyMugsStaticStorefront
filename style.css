@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+  font-family: Bitter, Georgia, serif;
+}
+
+/* HEADER NAV BAR */
+header {
+  position: fixed;
+  z-index: 1;
+  height: 5rem;
+  width: 100%;
+  background-color: rgb(25, 94, 98);
+}
+
+h1 {
+  font-family: Teko, Arial, sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0.15rem;
+  margin: auto;
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+#mainNav {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 0.75rem;
+}
+
+.navItem {
+  list-style: none;
+  display: inline-block;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  font-family: Bitter, Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.navItem a:hover {
+  color: rgb(252, 134, 66);
+}
+
+#hamburgerNav {
+  display: none;
+}
+
+#hamburgerNav label,
+#hamburger {
+  display: none;
+}
+
+/* BANNER */
+#bannerSpacer {
+  height: 45rem;
+  background-color: transparent;
+  z-index: -1;
+}
+
+#banner {
+  position: relative;
+}
+
+#bannerBackground {
+  opacity: 0.6;
+  margin-top: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: -3;
+  background-size: cover;
+}
+
+#bannerTextContainer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#banner h2 {
+  font-size: 3rem;
+  color: black;
+  position: relative;
+  bottom: 25rem;
+}
+
+#banner h3 {
+  font-size: 1.8rem;
+  color: black;
+  position: relative;
+  bottom: 15rem;
+  /* margin-bottom: 5rem; */
+}
+
+#banner h4 {
+  display: none;
+}
+
+#hiddenTextParent {
+  height: 50px;
+  width: 50%;
+  margin: auto;
+}
+
+#hiddenTextParent:hover h4 {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: black;
+  position: relative;
+  bottom: 12rem;
+  margin: -12rem;
+}
+
+/* PRODUCTS */
+#productsSection {
+  background-color: rgb(78, 154, 158);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0 0 0;
+}
+
+.productContainer {
+  height: auto;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.productImage {
+  height: 25rem;
+  display: block;
+  border-radius: 50%;
+}
+
+.addToCartButton {
+  border: 6px solid rgb(25, 94, 98);
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  left: 9.5rem;
+  bottom: 5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Teko, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  color: rgb(25, 94, 98);
+}
+
+#viewAllProductsButton {
+  height: 10rem;
+  width: 10rem;
+  border: 10px solid rgb(25, 94, 98);
+  border-radius: 50%;
+  background-color: white;
+  font-family: Teko, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  color: rgb(25, 94, 98);
+}
+
+.addToCartButton:hover,
+#viewAllProductsButton:hover {
+  color: rgb(189, 86, 27);
+  border-color: rgb(189, 86, 27);
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(25, 94, 98);
+  padding: 3rem;
+  text-align: center;
+}
+
+.socialMediaIcon {
+  height: 50px;
+  margin: 0 20px 20px 20px;
+}
+
+/* @MEDIA QUERIES */
+
+@media screen and (max-width: 815px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0.8rem;
+  }
+
+  #hamburgerNav {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  #hamburgerNav label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  #hamburgerNavItems a {
+    box-sizing: border-box;
+    background-color: rgb(25, 94, 98);
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    color: white;
+  }
+
+  #hamburgerNavItems {
+    display: none;
+  }
+
+  #hamburgerNav input:checked ~ #hamburgerNavItems {
+    display: block;
+  }
+
+  #mainNav {
+    display: none;
+  }
+
+  .productContainer:last-child {
+    width: 400px;
+  }
+}
